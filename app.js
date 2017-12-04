@@ -18,7 +18,8 @@ window.onload=function(){
   const setCookie = function(items){
     let setCookie = 'items=' + JSON.stringify(items);
     setCookie += '; max-age=' + (2*60*60*24);
-    document.cookie = setCookie;
+    console.log(setCookie);
+    // document.cookie = setCookie;
   };
 
   // cookieからitemsを取得する
