@@ -16,9 +16,8 @@ window.onload=function(){
   // cookieにitems配列を文字列でセットする
   // max-ageに秒数をセットするとそれが保存期間になる
   const setCookie = function(items){
-    let setCookie = 'items=' + JSON.stringify(items);
-    setCookie = setCookie + '; max-age=' + (2*60*60*24);
-    console.log(setCookie);
+    let setCookie = 'items=' + encodeURIComponent(JSON.stringify(items));
+    setCookie = setCookie + '; max-age=' + (60*60*24);
     document.cookie = setCookie;
   };
 
@@ -96,7 +95,6 @@ window.onload=function(){
           this.id++;
         }
         setCookie(this.items);
-        console.log(document.cookie);
       },
       toClipboard(){
         let text = '';
