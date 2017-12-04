@@ -16,7 +16,7 @@ window.onload=function(){
   // cookieにitems配列を文字列でセットする
   // max-ageに秒数をセットするとそれが保存期間になる
   const setCookie = function(items){
-    let setCookie = 'items=' + JSON.stringify(encodeURIComponent(items));
+    let setCookie = 'items=' + JSON.stringify(items);
     setCookie += '; max-age=' + (2*60*60*24);
     document.cookie = setCookie;
   };
