@@ -109,6 +109,10 @@ window.onload=function(){
         let copy = document.execCommand('copy');
         bodyElm.removeChild(copyArea);
         console.log('copy');
+      },
+      clearAll(){
+        let confirm = window.confirm('ToDoリストをリセットします');
+        if(confirm){this.items = [];}
       }
     }
   });
