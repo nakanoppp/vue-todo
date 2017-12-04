@@ -17,9 +17,9 @@ window.onload=function(){
   // max-ageに秒数をセットするとそれが保存期間になる
   const setCookie = function(items){
     let setCookie = 'items=' + JSON.stringify(items);
-    setCookie += '; max-age=' + (2*60*60*24);
+    setCookie = setCookie + '; max-age=' + (2*60*60*24);
     console.log(setCookie);
-    // document.cookie = setCookie;
+    document.cookie = setCookie;
   };
 
   // cookieからitemsを取得する
