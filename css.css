@@ -1,0 +1,113 @@
+body {
+  font-size: 1.3em;
+}
+
+.header {
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
+}
+
+.sidebar {
+  background: rgb(61, 79, 93);
+  color: #fff;
+}
+
+.content {
+  padding: 2em 0 0;
+  margin-bottom: 2em;
+}
+
+#input {
+  margin-bottom: 0.5em;
+}
+
+.button-secondary {
+  background: rgb(66, 184, 221);
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+  margin: 5px 10px 5px 10px;
+  border: 1px solid rgb(206, 206, 206);
+  padding: 5px;
+  border-radius: 0.2em;
+  background: white;
+}
+
+.button-item {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  border-radius: 0.5em;
+  width: 80px;
+}
+
+.button-delete {
+  border: 1px solid #ccc;
+  background: ghostwhite;
+  color: #333;
+  border-radius: 0.5em;
+  width: 2em;
+}
+
+.plan-list {
+  background: ghostwhite;
+  min-height: 50px;
+}
+
+.done-list {
+  background: whitesmoke;
+  min-height: 50px;
+}
+
+.item-name {
+  border-bottom: 1px solid rgb(206, 206, 206);
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.button-left {
+  float:left;
+}
+
+.button-right {
+  text-align:right;
+}
+
+.form {
+  padding: 0 1em 0;
+}
+
+.label-button {
+  background-color: rgb(215, 239, 255);
+}
+
+#clipboard {
+  border: 2px solid rgb(154, 226, 255);
+}
+
+@media screen and (min-width: 64em) {
+  body {
+    font-size: 1em;
+  }
+
+  .content {
+      padding: 2em 2em 0;
+      margin-left: 25%;
+  }
+
+  .header {
+      margin: 80% 2em 0;
+      text-align: right;
+  }
+
+  .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+  }
+
+}
