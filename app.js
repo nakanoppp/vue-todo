@@ -108,7 +108,7 @@ window.onload=function(){
         copyArea.select();
         let copy = document.execCommand('copy');
         bodyElm.removeChild(copyArea);
-        console.log('copy');
+        window.alert('クリップボードにコピーしました');
       },
       clearAll(){
         let confirm = window.confirm('ToDoリストをリセットします');
