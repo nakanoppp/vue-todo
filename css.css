@@ -1,5 +1,5 @@
 body {
-  font-size: 22px;
+  font-size: 1.3em;
 }
 
 .header {
@@ -111,9 +111,9 @@ body {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   body{
-    font-size: 17px;
+    font-size: 1em;
   }
 
   .content {
