@@ -52,9 +52,11 @@ window.onload=function(){
     methods: {
       toDone: function(item){
         item.status++;
+        setCookie(app.items);
       },
       toPlan: function(item){
         item.status--;
+        setCookie(app.items);
       },
       itemDelete: function(id){
         // 他コンポーネントの要素にアクセスするときの記述
